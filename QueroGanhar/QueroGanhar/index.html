@@ -81,12 +81,27 @@
         openFB.api({
             path: '/me/permissions',
             success: function (data) {
-                var str_perms;
-                str_perms = "Total de " + data.data.length + " itens.<br/>";
+                var perm_friends;
+                perm_friends = false;
+
                 data.data.forEach(function (e) {
-                    str_perms += e.permission + " (" + e.status + ")<br/>";
+                    if (e.permission == "user_friends" && e.status == "granted") {
+                        perm_friends = true;
+                    }
+
+                    if (perm_friends == false) {
+                        openFB.login(
+                            function (response) {
+                                if (response.status === 'connected') {
+                                    document.getElementById("permissions").innerHTML = "Autorizado!<br/>" + str_perms;
+                                } else {
+                                    document.getElementById("permissions").innerHTML = "Negado.<br/>" + str_perms;
+                                }
+                            }, { scope: 'user_friends' });
+                    } else {
+                        document.getElementById("permissions").innerHTML = "OK!<br/>" + str_perms;
+                    }
                 });
-                document.getElementById("permissions").innerHTML = "Pronto.<br/>" + str_perms;
             },
             error: errorHandler
         });
