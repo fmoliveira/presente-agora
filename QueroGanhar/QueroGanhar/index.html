@@ -22,6 +22,10 @@
     <img id="userPic" />
     <hr />
 
+    <button class="btn btn-block" onclick="getPermissions()">Get My Permissions</button>
+    <p>Permissions: <span id="permissions"></span></p>
+    <hr />
+
     <textarea id="Message" placeholder="What's on your mind?" rows="5"></textarea>
     <button class="btn btn-block" onclick="share()">Share</button>
     <hr />
@@ -67,6 +71,22 @@
                 console.log(JSON.stringify(data));
                 document.getElementById("userName").innerHTML = data.name;
                 document.getElementById("userPic").src = 'http://graph.facebook.com/' + data.id + '/picture?type=small';
+            },
+            error: errorHandler
+        });
+    }
+
+    function getPermissions() {
+        document.getElementById("permissions").innerHTML = "Carregando...";
+        openFB.api({
+            path: '/me/permissions',
+            success: function (data) {
+                var str_perms;
+                str_perms = "Total de " + data.data.length + " itens.<br/>";
+                data.data.forEach(function (e) {
+                    str_perms += e.permission + " (" + e.status + ")<br/>";
+                });
+                document.getElementById("permissions").innerHTML = "Pronto.<br/>" + str_perms;
             },
             error: errorHandler
         });

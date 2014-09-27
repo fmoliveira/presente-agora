@@ -10,6 +10,8 @@
   <content src="index.html" />
   <access origin="*" />
   <preference name="SplashScreen" value="screen" />
-  <vs:features />
+  <vs:features>
+    <vs:feature>org.apache.cordova.inappbrowser@0.5.0</vs:feature>
+  </vs:features>
   <vs:platformSpecificValues />
 </widget>
