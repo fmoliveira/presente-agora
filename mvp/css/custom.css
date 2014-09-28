@@ -16,6 +16,51 @@
 	color: #fff;
 }
 
+.prod {
+	width: 242px;
+	height: 302px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.prod .item {
+	border: 1px solid #fff;
+	margin: 5px;
+}
+
+.prod.loved .item {
+	border: 1px solid #e10000;
+	margin: 5px;
+}
+
+.prod .item, .prod .love {
+	cursor: pointer;
+}
+
+.prod .glyphicon {
+	font-size: 32px;
+}
+
+.prod .love {
+	height: 34px;
+	position: absolute;
+	float: left;
+	bottom: 0px;
+	right: 0px;
+}
+
+.prod.loved .love i {
+	color: #e10000;
+}
+
+.prod .link {
+	height: 34px;
+	position: absolute;
+	float: left;
+	bottom: 0px;
+	right: 44px;
+}
+
 .gallery div {
 	padding-bottom: 2em;
 	text-align: center;

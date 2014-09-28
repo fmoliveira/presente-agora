@@ -28,3 +28,8 @@ $('#estado').change(function() {
 			});
 	}
 });
+
+$('.prod .item,.prod .love').click(function() {
+	var $prod = $(this).parent();
+	$prod.toggleClass('loved');
+});
