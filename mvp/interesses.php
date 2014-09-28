@@ -58,7 +58,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Produtos</h1>
-        <p>Veja os produtos que selecionamos para você!</p>
+        <p>Veja os produtos que selecionamos para você! Clique nos seus preferidos para marcá-los!</p>
       </div>
     </div>
 
