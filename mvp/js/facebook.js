@@ -1,6 +1,7 @@
 window.fbAsyncInit = function() {
 	FB.init({
 		appId      : '718844268165157',
+		cookie     : true,
 		xfbml      : true,
 		version    : 'v2.1'
 	});
@@ -13,3 +14,11 @@ window.fbAsyncInit = function() {
 	js.src = "//connect.facebook.net/pt_BR/sdk.js";
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+
+function fblogin() {
+	FB.login(function(data) {
+		if (data.status == "connected") {
+			location.href = '/home';
+		}
+	}, {scope: 'public_profile'});
+};
