@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Quero Ganhar | Cadastro</title>
+    <title>Quero Ganhar | Quem?</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -52,8 +52,8 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Bem-vindo!</h1>
-        <p>Obrigado por se cadastrar. Preencha o seu perfil para conhecermos o tipo de presentes que você gostaria de ganhar.</p>
+        <h1>Quem?</h1>
+        <p>Homem ou mulher?</p>
       </div>
     </div>
 
@@ -63,7 +63,7 @@
 		<div class="process-row">
 			<div class="process-step">
 				<button type="button" class="btn btn-primary btn-circle" disabled="disabled"><i class="fa fa-user fa-3x"></i></button>
-				<p>Cadastro</p>
+				<p>Quem?</p>
 			</div>
 			<div class="process-step">
 				<button type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-comments-o fa-3x"></i></button>
@@ -71,58 +71,17 @@
 			</div>
 			<div class="process-step">
 				<button type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-thumbs-up fa-3x"></i></button>
-				<p>Interesses</p>
+				<p>Sugestões</p>
 			</div> 
 		</div>
 	</div>
+	
+	<p>&nbsp;</p>
 		
-	  <div class="row">
-		<div class="col-md-6 col-md-offset-3">
-		  <form class="form-horizontal" role="form">
-			<fieldset>
-
-			  <p>&nbsp;</p>
-
-			  <!-- Text input-->
-			  <div class="form-group">
-				<label class="col-sm-4 control-label" for="textinput">Data de nascimento</label>
-				<div class="col-sm-8">
-				  <input id="birthdate" name="birthdate" type="text" class="form-control datepicker">
-				</div>
-			  </div>
-
-			  <!-- Text input-->
-			  <div class="form-group">
-				<label class="col-sm-4 control-label" for="textinput">Estado</label>
-				<div class="col-sm-8">
-				  <select id="estado" name="estado" class="form-control">
-					<option>---</option>
-				  </select>
-				</div>
-			  </div>
-
-			  <!-- Text input-->
-			  <div class="form-group">
-				<label class="col-sm-4 control-label" for="textinput">Cidade</label>
-				<div class="col-sm-8">
-				  <select id="cidade" name="cidade" class="form-control">
-					<option>---</option>
-				  </select>
-				</div>
-			  </div>
-
-			  <div class="form-group">
-				<div class="col-sm-offset-4 col-sm-8">
-				  <div class="pull-right">
-					<a class="btn btn-success" href="/estilo-de-vida?nome=<?php echo $_GET['nome']; ?>">Continuar</a>
-				  </div>
-				</div>
-			  </div>
-
-			</fieldset>
-		  </form>
-		</div><!-- /.col-lg-12 -->
-	</div><!-- /.row -->
+	  <div class="row gallery">
+		<div class="col-md-4 col-md-offset-1"><a href="/estilo-de-vida?quem=homem"><img src="img/q-homem.jpg" alt=""/></a><br/><span>Homem</span></div>
+		<div class="col-md-4 col-md-offset-1"><a href="/estilo-de-vida?quem=mulher"><img src="img/q-mulher.jpg" alt=""/></a><br/><span>Mulher</span></div>
+	  </div><!-- /.row -->
 
       <hr>
 

@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Quero Ganhar | Interesses</title>
+    <title>Quero Ganhar | Sugestões</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -52,8 +52,8 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Produtos</h1>
-        <p>Veja os produtos que selecionamos para você! Clique nos seus preferidos para marcá-los!</p>
+        <h1>Sugestões</h1>
+        <p>Ele pode gostar destes presentes!</p>
       </div>
     </div>
 
@@ -62,16 +62,16 @@
       <div class="process">
 		<div class="process-row">
 			<div class="process-step">
-				<button type="button" class="btn btn-success btn-circle" disabled="disabled"><i class="fa fa-user fa-3x"></i></button>
-				<p>Cadastro</p>
+				<button type="button" class="btn btn-success btn-circle" style="cursor:pointer" onclick="location.href='/quem';"><i class="fa fa-user fa-3x"></i></button>
+				<p>Quem?</p>
 			</div>
 			<div class="process-step">
-				<button type="button" class="btn btn-success btn-circle" disabled="disabled"><i class="fa fa-comments-o fa-3x"></i></button>
+				<button type="button" class="btn btn-success btn-circle" style="cursor:pointer" onclick="location.href='/estilo-de-vida?quem=<?php print $_GET['quem']; ?>';"><i class="fa fa-comments-o fa-3x"></i></button>
 				<p>Estilo de vida</p>
 			</div>
 			<div class="process-step">
 				<button type="button" class="btn btn-primary btn-circle" disabled="disabled"><i class="fa fa-thumbs-up fa-3x"></i></button>
-				<p>Interesses</p>
+				<p>Sugestões</p>
 			</div> 
 		</div>
 	</div>
@@ -80,66 +80,63 @@
 		
 	<div class="row products">
 
-		<div class="col-md-4">
-			<div class="prod" data-product-id="1">
+		<div class="produto col-md-4" data-product-id="1">
+			<a target="_blank" href="http://www.submarino.com.br/produto/110092217/kit-livros-colecao-o-guia-do-mochileiro-das-galaxias-edicao-economica-5-volumes-">
 				<img class="item" src="img/prod-nerd-1.jpg" alt="Coleção O Guia do Mochileiro das Galáxias"/>
-				<div class="love"><i class="glyphicon glyphicon-heart"></i></div>
-				<div class="link"><a target="_blank" href="http://www.submarino.com.br/produto/110092217/kit-livros-colecao-o-guia-do-mochileiro-das-galaxias-edicao-economica-5-volumes-"><i class="glyphicon glyphicon-link"></i></a></div>
-			</div>
+			</a>
 			<br/>
 			<span>Coleção O Guia do Mochileiro das Galáxias</span><br/>
 			<em>R$ 29,90</em>
 		</div>
 		
-		<div class="col-md-4">
-			<div class="prod" data-product-id="2">
+		<div class="produto col-md-4" data-product-id="2">
+			<a target="_blank" href="http://www.pontofrio.com.br/Eletronicos/AcessoriosEletronicos/streamingmediaplayer/Google-Chromecast-HDMI-Streaming-3416747.html">
 				<img class="item" src="img/prod-nerd-2.jpg" alt="Google Chromecast HDMI Streaming"/>
-				<div class="love"><i class="glyphicon glyphicon-heart"></i></div>
-				<div class="link"><a target="_blank" href="http://www.pontofrio.com.br/Eletronicos/AcessoriosEletronicos/streamingmediaplayer/Google-Chromecast-HDMI-Streaming-3416747.html"><i class="glyphicon glyphicon-link"></i></a></div>
-			</div>
+			</a>
 			<br/>
 			<span>Google Chromecast HDMI Streaming</span><br/>
 			<em>R$ 249,00</em>
 		</div>
 		
-		<div class="col-md-4">
-			<div class="prod" data-product-id="3">
+		<div class="produto col-md-4" data-product-id="3">
+			<a target="_blank" href="http://www.americanas.com.br/produto/116182061/dvd-big-bang-a-teoria-a-sexta-temporada-completa-3-discos-">
 				<img class="item" src="img/prod-nerd-3.jpg" alt="Big Bang Theory - Sexta Temporada"/>
-				<div class="love"><i class="glyphicon glyphicon-heart"></i></div>
-				<div class="link"><a target="_blank" href="http://www.americanas.com.br/produto/116182061/dvd-big-bang-a-teoria-a-sexta-temporada-completa-3-discos-"><i class="glyphicon glyphicon-link"></i></a></div>
-			</div>
+			</a>
 			<br/>
 			<span>Big Bang Theory - Sexta Temporada</span><br/>
 			<em>R$ 67,92</em>
 		</div>
 		
-		<div class="col-md-4">
-			<div class="prod" data-product-id="4">
+		<div class="produto col-md-4" data-product-id="4">
+			<a target="_blank" href="http://www.magazineluiza.com.br/kindle-conexao-wi-fi-2gb-tela-6-ate-1.400-livros-amazon/p/0822400/tb/kind/">
 				<img class="item" src="img/prod-nerd-4.jpg" alt="Kindle Conexão Wi-Fi 2GB Tela 6&quot;"/>
-				<div class="love"><i class="glyphicon glyphicon-heart"></i></div>
-				<div class="link"><a target="_blank" href="http://www.magazineluiza.com.br/kindle-conexao-wi-fi-2gb-tela-6-ate-1.400-livros-amazon/p/0822400/tb/kind/"><i class="glyphicon glyphicon-link"></i></a></div>
-			</div>
+			</a>
 			<br/>
 			<span>Kindle Conexão Wi-Fi 2GB Tela 6&quot;</span><br/>
 			<em>R$ 299,00</em>
 		</div>
 		
-		<div class="col-md-4">
-			<div class="prod" data-product-id="5">
+		<div class="produto col-md-4" data-product-id="5">
+			<a target="_blank" href="http://www.redbug.com.br/p/camiseta-hadouken.html">
 				<img class="item" src="img/prod-nerd-5.jpg" alt="Camiseta Hadouken"/>
-				<div class="love"><i class="glyphicon glyphicon-heart"></i></div>
-				<div class="link"><a target="_blank" href="http://www.redbug.com.br/p/camiseta-hadouken.html"><i class="glyphicon glyphicon-link"></i></a></div>
-			</div>
+			</a>
 			<br/>
 			<span>Camiseta Hadouken</span><br/>
 			<em>R$ 59,00</em>
 		</div>
+		
+		<?php if ($_GET['quem'] == "mulher") { ?>
+		<div class="produto col-md-4" data-product-id="5">
+			<a target="_blank" href="http://www.lojamundogeek.com.br/feminino/Minion-Face-Meu-Malvado-Favorito">
+				<img class="item" src="img/prod-nerd-6.jpg" alt="Camiseta Feminina Minion Face"/>
+			</a>
+			<br/>
+			<span>Camiseta Feminina Minion Face</span><br/>
+			<em>R$ 79,90</em>
+		</div>
+		<?php } ?>
 
 	</div><!-- /.row -->
-	  
-	  <div class="row center">
-		<a class="btn btn-lg btn-success" href="#" onclick="terminar_lista('<?php echo $_GET['nome']; ?>'); return false;">Pronto, terminei!</a>
-	  </div>
 
       <hr>
 

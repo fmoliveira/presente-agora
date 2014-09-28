@@ -53,7 +53,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Estilo de vida</h1>
-        <p>Como você define o seu estilo de vida?</p>
+        <p>Qual é o estilo de vida da pessoa que você quer presentear?</p>
       </div>
     </div>
 
@@ -62,8 +62,8 @@
       <div class="process">
 		<div class="process-row">
 			<div class="process-step">
-				<button type="button" class="btn btn-success btn-circle" disabled="disabled"><i class="fa fa-user fa-3x"></i></button>
-				<p>Cadastro</p>
+				<button type="button" class="btn btn-success btn-circle" style="cursor:pointer" onclick="location.href='/quem';"><i class="fa fa-user fa-3x"></i></button>
+				<p>Quem?</p>
 			</div>
 			<div class="process-step">
 				<button type="button" class="btn btn-primary btn-circle" disabled="disabled"><i class="fa fa-comments-o fa-3x"></i></button>
@@ -71,7 +71,7 @@
 			</div>
 			<div class="process-step">
 				<button type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-thumbs-up fa-3x"></i></button>
-				<p>Interesses</p>
+				<p>Sugestões</p>
 			</div> 
 		</div>
 	</div>
@@ -79,13 +79,13 @@
 	<p>&nbsp;</p>
 		
 	  <div class="row gallery">
-		<div class="col-md-4"><a href="/interesses?nome=<?php echo $_GET['nome']; ?>"><img src="img/ls-nerd.jpg" alt=""/></a><br/><span>Nerd</span></div>
-		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-hipster.jpg" alt=""/></a><br/><span>Hipster</span></div>
-		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-adventurous.jpg" alt=""/></a><br/><span>Aventureiro</span></div>
-		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-cult.jpg" alt=""/></a><br/><span>Cult</span></div>
-		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-lazy.jpg" alt=""/></a><br/><span>Preguiçoso</span></div>
-		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-creative.jpg" alt=""/></a><br/><span>Criativo</span></div>
-		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-cheerful.jpg" alt=""/></a><br/><span>Animado</span></div>
+		<div class="col-md-4"><a href="/sugestoes?quem=<?php print $_GET['quem']; ?>&estilo=nerd"><img src="img/<?php print substr($_GET['quem'], 0, 1); ?>-nerd.jpg" alt=""/></a><br/><span>Nerd</span></div>
+		<div class="col-md-4"><a href="/sugestoes?quem=<?php print $_GET['quem']; ?>&estilo=hipster" onclick="alerta_estilo(); return false;"><img src="img/<?php print substr($_GET['quem'], 0, 1); ?>-hipster.jpg" alt=""/></a><br/><span>Hipster</span></div>
+		<div class="col-md-4"><a href="/sugestoes?quem=<?php print $_GET['quem']; ?>&estilo=aventureiro" onclick="alerta_estilo(); return false;"><img src="img/<?php print substr($_GET['quem'], 0, 1); ?>-aventureiro.jpg" alt=""/></a><br/><span>Aventureir<?php print ($_GET['quem'] == "homem" ? "o" : "a"); ?></span></div>
+		<div class="col-md-4"><a href="/sugestoes?quem=<?php print $_GET['quem']; ?>&estilo=cult" onclick="alerta_estilo(); return false;"><img src="img/<?php print substr($_GET['quem'], 0, 1); ?>-cult.jpg" alt=""/></a><br/><span>Cult</span></div>
+		<div class="col-md-4"><a href="/sugestoes?quem=<?php print $_GET['quem']; ?>&estilo=preguiçoso" onclick="alerta_estilo(); return false;"><img src="img/<?php print substr($_GET['quem'], 0, 1); ?>-preguicoso.jpg" alt=""/></a><br/><span>Preguiços<?php print ($_GET['quem'] == "homem" ? "o" : "a"); ?></span></div>
+		<div class="col-md-4"><a href="/sugestoes?quem=<?php print $_GET['quem']; ?>&estilo=criativo" onclick="alerta_estilo(); return false;"><img src="img/<?php print substr($_GET['quem'], 0, 1); ?>-criativo.jpg" alt=""/></a><br/><span>Criativ<?php print ($_GET['quem'] == "homem" ? "o" : "a"); ?></span></div>
+		<div class="col-md-4"><a href="/sugestoes?quem=<?php print $_GET['quem']; ?>&estilo=animado" onclick="alerta_estilo(); return false;"><img src="img/<?php print substr($_GET['quem'], 0, 1); ?>-animado.jpg" alt=""/></a><br/><span>Animad<?php print ($_GET['quem'] == "homem" ? "o" : "a"); ?></span></div>
 	  </div><!-- /.row -->
 
       <hr>

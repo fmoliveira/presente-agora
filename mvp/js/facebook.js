@@ -19,7 +19,7 @@ function fblogin() {
 	FB.login(function(data) {
 		if (data.status == "connected") {
 			FB.api('/me', function(response) {
-				location.href = '/cadastro?nome=' + response.name;
+				location.href = '/quem';
 			});
 		}
 	}, {scope: 'email,public_profile'});
