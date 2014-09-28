@@ -14,7 +14,7 @@ function get_estados()
 {
 	$ret = array();
 	$link = get_link();
-	$sql = "SELECT id, uf, nome FROM tb_estados ORDER BY nome ASC;";
+	$sql = "SELECT id, nome FROM tb_estados ORDER BY nome ASC;";
 	$result = mysqli_query($link, $sql);
 	
 	if (mysqli_num_rows($result) > 0)
@@ -23,7 +23,27 @@ function get_estados()
 		{
 			$item = array();
 			$item['id'] = $row['id'];
-			$item['uf'] = $row['uf'];
+			$item['nome'] = $row['nome'];
+			$ret[] = $item;
+		}
+	}
+	
+	return json_encode($ret);
+}
+
+function get_cidades($id)
+{
+	$ret = array();
+	$link = get_link();
+	$sql = sprintf("SELECT id, nome FROM tb_cidades WHERE estado = %d;", $id);
+	$result = mysqli_query($link, $sql);
+	
+	if (mysqli_num_rows($result) > 0)
+	{
+		while ($row = mysqli_fetch_assoc($result))
+		{
+			$item = array();
+			$item['id'] = $row['id'];
 			$item['nome'] = $row['nome'];
 			$ret[] = $item;
 		}
@@ -39,6 +59,13 @@ if (isset($_GET) && isset($_GET['action']))
 		case "estados":
 			header("Content-type: application/json; charset=UTF8");
 			print get_estados();
+			break;
+			
+		case "cidades":
+			if (isset($_GET['id'])) {
+				header("Content-type: application/json; charset=UTF8");
+				print get_cidades($_GET['id']);
+			}
 			break;
 	}
 }

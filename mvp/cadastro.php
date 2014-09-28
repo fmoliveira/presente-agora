@@ -100,7 +100,9 @@
 			  <div class="form-group">
 				<label class="col-sm-4 control-label" for="textinput">Estado</label>
 				<div class="col-sm-8">
-				  <input type="text" class="form-control">
+				  <select id="estado" name="estado" class="form-control">
+					<option>---</option>
+				  </select>
 				</div>
 			  </div>
 
@@ -108,7 +110,9 @@
 			  <div class="form-group">
 				<label class="col-sm-4 control-label" for="textinput">Cidade</label>
 				<div class="col-sm-8">
-				  <input type="text" class="form-control">
+				  <select id="cidade" name="cidade" class="form-control">
+					<option>---</option>
+				  </select>
 				</div>
 			  </div>
 
