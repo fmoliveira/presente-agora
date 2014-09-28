@@ -13,6 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/datepicker3.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
@@ -91,7 +92,7 @@
 			  <div class="form-group">
 				<label class="col-sm-4 control-label" for="textinput">Data de nascimento</label>
 				<div class="col-sm-8">
-				  <input type="text" class="form-control">
+				  <input id="birthdate" name="birthdate" type="text" class="form-control datepicker">
 				</div>
 			  </div>
 
@@ -138,6 +139,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/google.analytics.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	
+	<script src="js/facebook.js"></script>
+	<script src="js/custom.js"></script>
 	
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
