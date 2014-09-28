@@ -1,0 +1,30 @@
+Nerd
+	Livros
+	Chromecast
+	DVD Big Bang Theory
+	Kindle
+	Camisetas
+Hipster
+	Lomo
+	Tênis
+	Bolsa
+	Óculos
+	Acessórios
+Esportista
+	Monitor cardíaco
+	Braçadeira
+	Tênis
+	Roupas Esportivas
+Cult
+	Livros
+	Ingressos
+	Camisetas
+	Quadros
+	Moleskine
+Preguiçoso
+	Almofadas
+	Pantufa
+	Pijama
+	Travesseiro
+Criativo
+	

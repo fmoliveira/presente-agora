@@ -40,13 +40,13 @@
           <a class="navbar-brand" href="#"><img src="img/logo_white_small.png" alt="Quero Ganhar"/></a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					<span class="glyphicon glyphicon-user icon-padleft"></span> Fulano
+			<li>
+				<a href="/inicio">
+					<span class="glyphicon glyphicon-user icon-padleft"></span> Usuário
 				</a>
 			</li>
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			<li>
+				<a href="/">
 					<span class="glyphicon glyphicon-log-out icon-padleft"></span> Sair
 				</a>
 			</li>

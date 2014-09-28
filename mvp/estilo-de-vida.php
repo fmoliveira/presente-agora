@@ -8,10 +8,12 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Quero Ganhar</title>
+    <title>Quero Ganhar | Cadastro</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/datepicker3.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
@@ -55,31 +57,22 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+        <h1>Estilo de vida</h1>
+        <p>Como você define o seu estilo de vida?</p>
       </div>
     </div>
 
     <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
+		
+	  <div class="row gallery">
+		<div class="col-md-4"><img src="img/ls-nerd.jpg" alt=""/><br/><span>Nerd</span></div>
+		<div class="col-md-4"><img src="img/ls-hipster.jpg" alt=""/><br/><span>Hipster</span></div>
+		<div class="col-md-4"><img src="img/ls-adventurous.jpg" alt=""/><br/><span>Aventureiro</span></div>
+		<div class="col-md-4"><img src="img/ls-cult.jpg" alt=""/><br/><span>Cult</span></div>
+		<div class="col-md-4"><img src="img/ls-lazy.jpg" alt=""/><br/><span>Preguiçoso</span></div>
+		<div class="col-md-4"><img src="img/ls-creative.jpg" alt=""/><br/><span>Criativo</span></div>
+		<div class="col-md-4"><img src="img/ls-cheerful.jpg" alt=""/><br/><span>Animado</span></div>
+	  </div><!-- /.row -->
 
       <hr>
 

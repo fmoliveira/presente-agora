@@ -11,6 +11,21 @@
 	margin-top: -3px;
 }
 
+.jumbotron {
+	background: url(../img/bg.jpg) center;
+	color: #fff;
+}
+
+.gallery div {
+	padding-bottom: 2em;
+	text-align: center;
+}
+
+.gallery div span {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
 .stepwizard-step p {
     margin-top: 10px;    
 }
