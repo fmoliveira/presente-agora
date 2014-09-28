@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Quero Ganhar | Estilo de vida</title>
+    <title>Presente Agora | Estilo de vida</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -37,15 +37,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="img/logo_white_small.png" alt="Quero Ganhar"/></a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-			<li>
-				<a href="/">
-					<span class="glyphicon glyphicon-log-out icon-padleft"></span> Sair
-				</a>
-			</li>
-        </ul><!--/.navbar-collapse -->
+          <a class="navbar-brand" href="#"><img src="img/logo_white_small.png" alt="Presente Agora"/></a>
+        </div><!--/.navbar-collapse -->
       </div>
     </div>
 
