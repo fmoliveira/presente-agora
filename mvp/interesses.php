@@ -42,7 +42,7 @@
         <ul class="nav navbar-nav navbar-right">
 			<li>
 				<a href="#">
-					<span class="glyphicon glyphicon-user icon-padleft"></span> Usuário
+					<span class="glyphicon glyphicon-user icon-padleft"></span> <?php echo $_GET['nome']; ?>
 				</a>
 			</li>
 			<li>
@@ -143,7 +143,7 @@
 	</div><!-- /.row -->
 	  
 	  <div class="row center">
-		<a class="btn btn-lg btn-success" href="#" onclick="terminar_lista(); return false;">Pronto, terminei!</a>
+		<a class="btn btn-lg btn-success" href="#" onclick="terminar_lista('<?php echo $_GET['nome']; ?>'); return false;">Pronto, terminei!</a>
 	  </div>
 
       <hr>

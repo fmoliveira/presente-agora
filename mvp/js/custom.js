@@ -38,7 +38,7 @@ function alerta_estilo() {
 	alert('Desculpe, estamos em testes!\n\nNo momento apenas o estilo de vida nerd está disponível.');
 }
 
-function terminar_lista() {
+function terminar_lista(nome) {
 	var $loved = $('.loved');
 	
 	if ($loved.length == 0) {
@@ -51,6 +51,6 @@ function terminar_lista() {
 			}
 			$args += $(value).data('product-id');
 		});
-		location.href = '/lista-de-desejos?produtos=' + $args;
+		location.href = '/lista-de-desejos?nome=' + nome + '&produtos=' + $args;
 	}
 }

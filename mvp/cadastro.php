@@ -42,7 +42,7 @@
         <ul class="nav navbar-nav navbar-right">
 			<li>
 				<a href="#">
-					<span class="glyphicon glyphicon-user icon-padleft"></span> Usuário
+					<span class="glyphicon glyphicon-user icon-padleft"></span> <?php echo $_GET['nome']; ?>
 				</a>
 			</li>
 			<li>
@@ -119,7 +119,7 @@
 			  <div class="form-group">
 				<div class="col-sm-offset-4 col-sm-8">
 				  <div class="pull-right">
-					<a class="btn btn-success" href="/estilo-de-vida">Continuar</a>
+					<a class="btn btn-success" href="/estilo-de-vida?nome=<?php echo $_GET['nome']; ?>">Continuar</a>
 				  </div>
 				</div>
 			  </div>

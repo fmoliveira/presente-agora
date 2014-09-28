@@ -42,7 +42,7 @@
         <ul class="nav navbar-nav navbar-right">
 			<li>
 				<a href="#">
-					<span class="glyphicon glyphicon-user icon-padleft"></span> Usuário
+					<span class="glyphicon glyphicon-user icon-padleft"></span> <?php echo $_GET['nome']; ?>
 				</a>
 			</li>
 			<li>
@@ -84,7 +84,7 @@
 	<p>&nbsp;</p>
 		
 	  <div class="row gallery">
-		<div class="col-md-4"><a href="/interesses"><img src="img/ls-nerd.jpg" alt=""/></a><br/><span>Nerd</span></div>
+		<div class="col-md-4"><a href="/interesses?nome=<?php echo $_GET['nome']; ?>"><img src="img/ls-nerd.jpg" alt=""/></a><br/><span>Nerd</span></div>
 		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-hipster.jpg" alt=""/></a><br/><span>Hipster</span></div>
 		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-adventurous.jpg" alt=""/></a><br/><span>Aventureiro</span></div>
 		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-cult.jpg" alt=""/></a><br/><span>Cult</span></div>

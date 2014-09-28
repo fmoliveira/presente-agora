@@ -18,7 +18,9 @@ window.fbAsyncInit = function() {
 function fblogin() {
 	FB.login(function(data) {
 		if (data.status == "connected") {
-			location.href = '/cadastro';
+			FB.api('/me', function(response) {
+				location.href = '/cadastro?nome=' + response.name;
+			});
 		}
 	}, {scope: 'email,public_profile'});
 };
