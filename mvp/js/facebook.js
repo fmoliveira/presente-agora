@@ -20,5 +20,5 @@ function fblogin() {
 		if (data.status == "connected") {
 			location.href = '/inicio';
 		}
-	}, {scope: 'public_profile'});
+	}, {scope: 'email,public_profile'});
 };
