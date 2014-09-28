@@ -41,7 +41,7 @@
         </div>
         <ul class="nav navbar-nav navbar-right">
 			<li>
-				<a href="/inicio">
+				<a href="#">
 					<span class="glyphicon glyphicon-user icon-padleft"></span> Usuário
 				</a>
 			</li>
@@ -63,15 +63,34 @@
     </div>
 
     <div class="container">
+      <!-- Example row of columns -->
+      <div class="process">
+		<div class="process-row">
+			<div class="process-step">
+				<button type="button" class="btn btn-success btn-circle" disabled="disabled"><i class="fa fa-user fa-3x"></i></button>
+				<p>Cadastro</p>
+			</div>
+			<div class="process-step">
+				<button type="button" class="btn btn-primary btn-circle" disabled="disabled"><i class="fa fa-comments-o fa-3x"></i></button>
+				<p>Estilo de vida</p>
+			</div>
+			<div class="process-step">
+				<button type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-thumbs-up fa-3x"></i></button>
+				<p>Interesses</p>
+			</div> 
+		</div>
+	</div>
+	
+	<p>&nbsp;</p>
 		
 	  <div class="row gallery">
-		<div class="col-md-4"><img src="img/ls-nerd.jpg" alt=""/><br/><span>Nerd</span></div>
-		<div class="col-md-4"><img src="img/ls-hipster.jpg" alt=""/><br/><span>Hipster</span></div>
-		<div class="col-md-4"><img src="img/ls-adventurous.jpg" alt=""/><br/><span>Aventureiro</span></div>
-		<div class="col-md-4"><img src="img/ls-cult.jpg" alt=""/><br/><span>Cult</span></div>
-		<div class="col-md-4"><img src="img/ls-lazy.jpg" alt=""/><br/><span>Preguiçoso</span></div>
-		<div class="col-md-4"><img src="img/ls-creative.jpg" alt=""/><br/><span>Criativo</span></div>
-		<div class="col-md-4"><img src="img/ls-cheerful.jpg" alt=""/><br/><span>Animado</span></div>
+		<div class="col-md-4"><a href="/produtos"><img src="img/ls-nerd.jpg" alt=""/></a><br/><span>Nerd</span></div>
+		<div class="col-md-4"><a href="/produtos"><img src="img/ls-hipster.jpg" alt=""/></a><br/><span>Hipster</span></div>
+		<div class="col-md-4"><a href="/produtos"><img src="img/ls-adventurous.jpg" alt=""/></a><br/><span>Aventureiro</span></div>
+		<div class="col-md-4"><a href="/produtos"><img src="img/ls-cult.jpg" alt=""/></a><br/><span>Cult</span></div>
+		<div class="col-md-4"><a href="/produtos"><img src="img/ls-lazy.jpg" alt=""/></a><br/><span>Preguiçoso</span></div>
+		<div class="col-md-4"><a href="/produtos"><img src="img/ls-creative.jpg" alt=""/></a><br/><span>Criativo</span></div>
+		<div class="col-md-4"><a href="/produtos"><img src="img/ls-cheerful.jpg" alt=""/></a><br/><span>Animado</span></div>
 	  </div><!-- /.row -->
 
       <hr>

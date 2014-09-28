@@ -26,6 +26,22 @@
 	font-weight: bold;
 }
 
+.products div {
+	padding-bottom: 2em;
+	text-align: center;
+}
+
+.products div span {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.products div em {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #f60;
+}
+
 .stepwizard-step p {
     margin-top: 10px;    
 }
