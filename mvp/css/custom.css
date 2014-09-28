@@ -7,6 +7,10 @@
 	margin-bottom: 1em;
 }
 
+.navbar-brand img {
+	margin-top: -3px;
+}
+
 .stepwizard-step p {
     margin-top: 10px;    
 }
