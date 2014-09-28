@@ -16,6 +16,10 @@
 	color: #fff;
 }
 
+.center {
+	text-align: center;
+}
+
 .prod {
 	width: 242px;
 	height: 302px;
