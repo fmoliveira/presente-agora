@@ -13,6 +13,16 @@ $().ready(function() {
 				});
 			});
 	}
+	
+	var $wishlist = $('#wishlist');
+	if ($wishlist.length == 1) {
+		var $prods = location.href.substr(location.href.indexOf('produtos=') + 9).split(',');
+		$.each($prods, function(key, value) {
+			$('[data-product-id="' + value + '"]').addClass('wished');
+		});
+		
+		$('div.produto:not(.wished)').remove();
+	}
 });
 
 $('#estado').change(function() {
