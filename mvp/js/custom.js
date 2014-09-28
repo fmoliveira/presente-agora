@@ -33,3 +33,7 @@ $('.prod .item,.prod .love').click(function() {
 	var $prod = $(this).parent();
 	$prod.toggleClass('loved');
 });
+
+function alerta_estilo() {
+	alert('Desculpe, estamos em testes!\n\nNo momento apenas o estilo de vida nerd está disponível.');
+}

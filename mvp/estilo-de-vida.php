@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Quero Ganhar | Cadastro</title>
+    <title>Quero Ganhar | Estilo de vida</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -84,13 +84,13 @@
 	<p>&nbsp;</p>
 		
 	  <div class="row gallery">
-		<div class="col-md-4"><a href="/produtos"><img src="img/ls-nerd.jpg" alt=""/></a><br/><span>Nerd</span></div>
-		<div class="col-md-4"><a href="#" onclick="return false;"><img src="img/ls-hipster.jpg" alt=""/></a><br/><span>Hipster</span></div>
-		<div class="col-md-4"><a href="#" onclick="return false;"><img src="img/ls-adventurous.jpg" alt=""/></a><br/><span>Aventureiro</span></div>
-		<div class="col-md-4"><a href="#" onclick="return false;"><img src="img/ls-cult.jpg" alt=""/></a><br/><span>Cult</span></div>
-		<div class="col-md-4"><a href="#" onclick="return false;"><img src="img/ls-lazy.jpg" alt=""/></a><br/><span>Preguiçoso</span></div>
-		<div class="col-md-4"><a href="#" onclick="return false;"><img src="img/ls-creative.jpg" alt=""/></a><br/><span>Criativo</span></div>
-		<div class="col-md-4"><a href="#" onclick="return false;"><img src="img/ls-cheerful.jpg" alt=""/></a><br/><span>Animado</span></div>
+		<div class="col-md-4"><a href="/interesses"><img src="img/ls-nerd.jpg" alt=""/></a><br/><span>Nerd</span></div>
+		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-hipster.jpg" alt=""/></a><br/><span>Hipster</span></div>
+		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-adventurous.jpg" alt=""/></a><br/><span>Aventureiro</span></div>
+		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-cult.jpg" alt=""/></a><br/><span>Cult</span></div>
+		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-lazy.jpg" alt=""/></a><br/><span>Preguiçoso</span></div>
+		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-creative.jpg" alt=""/></a><br/><span>Criativo</span></div>
+		<div class="col-md-4"><a href="#" onclick="alerta_estilo(); return false;"><img src="img/ls-cheerful.jpg" alt=""/></a><br/><span>Animado</span></div>
 	  </div><!-- /.row -->
 
       <hr>
